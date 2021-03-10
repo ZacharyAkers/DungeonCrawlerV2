@@ -1,17 +1,24 @@
+  
 import React from 'react';
 import ReactDOM from 'react-dom';
+import bugsnag from 'bugsnag-js';
+import createPlugin from 'bugsnag-react';
+import version from './version.json';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import registerServiceWorker from './registerServiceWorker';
+
+const bugsnagClient = bugsnag({
+  apiKey: '733fe1744f51faceca41123ed92afa72',
+  appVersion: version.version,
+  notifyReleaseStages: ['production'],
+});
+const ErrorBoundary = bugsnagClient.use(createPlugin(React));
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ErrorBoundary>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </ErrorBoundary>,
+  document.getElementById('root'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+registerServiceWorker();
