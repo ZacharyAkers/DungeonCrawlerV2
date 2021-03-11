@@ -1,0 +1,22 @@
+body {
+  /* Button Colors */
+  --primary: #1abb14;
+  --primary-hover: #158f11;
+  --secondary: #1866cc;
+  --secondary-hover: #0f4ea0;
+  --destructive: #d60d0d;
+  --destructive-hover: #bd0909;
+  --disabled-state: #5a5a5a;
+
+  /* Font Colors */
+  --light: #bebebe;
+  --lighter: #ececec;
+  --dark: #2c2c2c;
+  --darker: #0f0f0f;
+  --positive-change: #1e4c1c;
+  --negative-change: #bd0909;
+
+  /* Number Colors */
+  --heal-number: #1abb14;
+  --damage-number: #bd0909;
+}

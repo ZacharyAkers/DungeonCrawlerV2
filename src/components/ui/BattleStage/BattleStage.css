@@ -1,0 +1,97 @@
+.BattleStage {
+  position: relative;
+  display: flex;
+  height: 100%;
+  min-height: 398px;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.BattleStage .modal h3 {
+  text-align: center;
+  align-self: center;
+}
+
+.BattleStage .modal {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: opacity 400ms ease-in 1400ms, visibility 0ms linear 1000ms;
+}
+
+.BattleStage .modal p {
+  margin: 0.5em 0;
+}
+
+.BattleStage .modal.shown {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (min-width: 635px) {
+  .BattleStage .modal {
+    right: 5%;
+    left: 5%;
+    top: 5%;
+    bottom: 5%;
+    border: 2px solid black;
+  }
+}
+
+.BattleStage .modal .Button {
+  align-self: flex-end;
+  position: relative;
+  margin-top: auto;
+  top: 5px;
+  left: 5px;
+}
+
+.BattleStage .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BattleStage .combat-message {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  text-align: center;
+  color: var(--light);
+  z-index: 1;
+}
+
+.BattleStage .heros,
+.BattleStage .monsters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.BattleStage .heros .Bar:first-child {
+  margin-top: -15px;
+}
+
+.BattleStage .heros img {
+  transform: scaleX(-1);
+  margin-bottom: -15px;
+}
+
+@media screen and (min-width: 400px) {
+  .BattleStage .heros img {
+    margin-bottom: -25px;
+  }
+}

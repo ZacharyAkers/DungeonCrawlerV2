@@ -1,0 +1,191 @@
+[
+  {
+    "id": 10000,
+    "name": "Gold",
+    "type": "gold",
+    "collections": [],
+    "description": "Oooh shiny",
+    "price": [1],
+    "image": "coin"
+  },
+  {
+    "id": 10001,
+    "name": "Health Potion",
+    "rarity": 1,
+    "level": 1,
+    "type": "potion",
+    "collections": ["use:all", "buy", "basic-needs", "sell", "recovery", "starting-item"],
+    "description": "Heals some health",
+    "price": [50],
+    "attributes": {
+      "vitals": {
+        "health": 350
+      }
+    },
+    "image": "potionRed",
+    "assetInfo": {
+      "useSound": "bubble",
+      "moveSound": "bottle"
+    }
+  },
+  {
+    "id": 10004,
+    "name": "Mana Potion",
+    "rarity": 1,
+    "level": 1,
+    "type": "potion",
+    "collections": ["use:all", "buy", "basic-needs", "sell", "recovery", "starting-item"],
+    "description": "Restores some mana",
+    "price": [50],
+    "attributes": {
+      "vitals": {
+        "mana": 100
+      }
+    },
+    "image": "potionBlue",
+    "assetInfo": {
+      "useSound": "bubble",
+      "moveSound": "bottle"
+    }
+  },
+  {
+    "id": 10002,
+    "name": "Wooden Sword",
+    "rarity": 1,
+    "level": 1,
+    "type": "weapon",
+    "collections": ["starting-item", "sell", "swords", "buy"],
+    "description": "It's basically a cool stick...",
+    "price": [75,150],
+    "attributes": {
+      "attack": [3,6]
+    },
+    "image": "swordWood",
+    "assetInfo": {
+      "attackSound": "swordAttack",
+      "moveSound": ""
+    }
+  },
+  {
+    "id": 10003,
+    "name": "Club",
+    "rarity": 1,
+    "level": 1,
+    "type": "weapon",
+    "collections": ["sell", "maces"],
+    "description": "It's a heavy stick",
+    "price": [50, 125],
+    "attributes": {
+      "attack": [2,5]
+    },
+    "image": "hammer",
+    "assetInfo": {
+      "attackSound": "staffAttack",
+      "moveSound": ""
+    }
+  },
+  {
+    "id": 10005,
+    "name": "Basic Pack",
+    "rarity": 1,
+    "level": 1,
+    "type": "backpack",
+    "collections": ["backpacks", "no-treasure", "sell"],
+    "description": "Can store 10 items",
+    "price": [250],
+    "attributes": {
+      "capacity": [10]
+    },
+    "image": "backpack",
+    "assetInfo": {
+      "moveSound": ""
+    }
+  },
+  {
+    "id": 10006,
+    "name": "Wooden Bow",
+    "rarity": 1,
+    "level": 1,
+    "type": "weapon",
+    "collections": ["bows", "two-handed", "starting-item", "sell", "buy"],
+    "description": "A simple bow",
+    "price": [120,200],
+    "attributes": {
+      "attack": [6,10]
+    },
+    "image": "bow",
+    "assetInfo": {
+      "attackSound": "bowAttack"
+    }
+  },
+  {
+    "id": 10007,
+    "name": "Basic Armor",
+    "rarity": 1,
+    "level": 1,
+    "type": "armor",
+    "collections": ["armor", "starting-item", "sell", "buy"],
+    "description": "Anything helps, right?",
+    "price": [100,200],
+    "attributes": {
+      "defence": [2,4]
+    },
+    "image": "armor",
+    "assetInfo": {
+      "moveSound": ""
+    }
+  },
+  {
+    "id": 10008,
+    "name": "Basic Wand",
+    "rarity": 1,
+    "level": 1,
+    "type": "weapon",
+    "collections": ["starting-item", "wands", "two-handed", "sell", "buy"],
+    "description": "A basic magic wand",
+    "price": [85,190],
+    "attributes": {
+      "attack": [2,5],
+      "magic": [1,2]
+    },
+    "image": "wand",
+    "assetInfo": {
+      "attackSound": "staffAttack",
+      "moveSound": ""
+    }
+  },
+  {
+    "id": 10009,
+    "name": "Basic Helmet",
+    "rarity": 1,
+    "level": 1,
+    "type": "helmet",
+    "collections": ["starting-item", "helmets", "sell", "buy"],
+    "description": "Provides a little head protection",
+    "price": [50,100],
+    "attributes": {
+      "defence": [1,2]
+    },
+    "image": "helmet",
+    "assetInfo": {
+      "moveSound": ""
+    }
+  },
+  {
+    "id": 10010,
+    "name": "Basic Shield",
+    "rarity": 1,
+    "level": 1,
+    "type": "shield",
+    "collections": ["shields", "starting-item", "sell", "buy"],
+    "description": "A somewhat flimsy shield",
+    "price": [50,100],
+    "attributes": {
+      "defence": [1,2]
+    },
+    "image": "shieldSmall",
+    "assetInfo": {
+      "moveSound": ""
+    }
+  }
+]

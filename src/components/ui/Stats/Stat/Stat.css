@@ -1,0 +1,29 @@
+.Stat td:last-child {
+  text-align: right;
+}
+
+.Stat td {
+  font-weight: bold;
+}
+
+.Stat .name-container span {
+  padding: 8px;
+}
+
+.Stat .name-container .Button {
+  font-family: 'Cup and Talon';
+  color: inherit;
+  font-size: inherit;
+}
+
+.Stat .temp-value {
+  color: var(--positive-change);
+}
+
+.Stat .temp-value.decrease {
+  color: var(--negative-change);
+}
+
+.stat-modal .Button {
+  margin-top: 15px;
+}

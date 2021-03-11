@@ -1,0 +1,114 @@
+.Modal,
+.ModalBackground {
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.Modal {
+  max-width: 800px;
+  max-height: 90%;
+  min-width: 245px;
+  min-height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: white;
+}
+
+.Modal.full-width {
+  width: 80%;
+}
+
+.ModalBackground {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+}
+
+.ModalContainer.shown .ModalBackground,
+.ModalContainer.shown .Modal {
+  visibility: visible;
+}
+
+.ModalContainer.shown .ModalBackground {
+  opacity: 0.7;
+}
+
+.ModalContainer.shown .Modal {
+  opacity: 1;
+}
+
+.Modal .modal-title {
+  width: 100%;
+  background: white;
+  z-index: 1;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal .modal-content {
+  overflow: auto;
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.Modal .close-button {
+  position: absolute;
+  right: -16px;
+  top: -20px;
+  background: white;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.Modal .close-button span {
+  position: relative;
+  top: 2px;
+}
+
+.Modal .close-button:hover {
+  background-color: var(--lighter);
+}
+
+.Modal h2 {
+  margin: 0 0 10px 0;
+}
+
+.Modal p {
+  margin: 0.6em 0;
+}
+
+.Modal .actions {
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+.Modal .actions .Button {
+  min-width: 100px;
+}
+
+.Modal .actions .Button + .Button {
+  margin-left: 15px;
+}

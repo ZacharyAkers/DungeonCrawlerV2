@@ -1,0 +1,26 @@
+.Header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--dark);
+  height: 75px;
+  color: white;
+}
+
+.Header .title {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 635px) {
+  .Header {
+    justify-content: center;
+  }
+}
+
+.Header button {
+  position: absolute;
+  right: 10px;
+}

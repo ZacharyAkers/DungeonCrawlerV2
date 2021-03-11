@@ -1,0 +1,68 @@
+.SkillCard {
+  height: 120px;
+  width: 80px;
+  margin: 5px;
+  font-size: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px 2px;
+  background: #dcdcdc;
+}
+
+.SkillCard.magic {
+  background: #cee4ea; 
+}
+
+.SkillCard.skills {
+  background: #dcffdc
+}
+
+.SkillCard.disabled {
+  background: #a2a2a2;
+}
+
+.SkillCard div {
+  text-align: center;
+}
+
+.SkillCard img {
+  width: 60%;
+  margin: auto auto 5px auto;
+  padding-left: 20px;
+}
+
+.SkillCard .level-badge {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  bottom: 30px;
+  left: 0;
+  background: #ffff87;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.SkillCard .price img {
+  width: 25px;
+  margin: 0 -8px;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.SkillCard .skill-actions {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.SkillCard .tooltiptext {
+  top: 0 !important;
+  transform: translate(-50%, -55px) !important;
+  width: 95%;
+  max-height: 88px;
+}

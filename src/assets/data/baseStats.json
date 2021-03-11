@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "level": 1,
+    "strength": 3,
+    "vitality": 3,
+    "dexterity": 3,
+    "agility": 3,
+    "magic": 3,
+    "health": 100,
+    "mana": 0,
+    "attack": 0,
+    "defence": 0
+  },
+  "vitals": {
+    "exp": 0
+  },
+  "skills": [],
+  "magic": [],
+  "equipment": {
+    "helmet": null,
+    "armor": null,
+    "weapon": null,
+    "shield": null,
+    "boots": null,
+    "backpack": null
+  }
+}
