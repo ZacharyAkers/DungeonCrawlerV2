@@ -10,7 +10,7 @@ export default function Header(props) {
 
   return (
     <header className="Header">
-      <h1 className="title">React RPG</h1>
+      <h1 className="title">Dungeon Crawler V2</h1>
       <Button secondary onClick={toggleMusic}>Sound {bgPlay ? 'On' : 'Off'}</Button>
     </header>
   )
