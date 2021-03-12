@@ -63,7 +63,7 @@ export default class MainMenu extends React.PureComponent {
 
     return (
       <div className="MainMenu">
-        <h1>Welcome to React RPG</h1>
+        <h1>Welcome to Dungeon Crawler V2</h1>
         <h3>Please select an option</h3>
         <div className="menu-select">
           {options.map((option) => {
