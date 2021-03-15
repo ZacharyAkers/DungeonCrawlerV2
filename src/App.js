@@ -263,6 +263,7 @@ export default class App extends React.Component {
     });
   }
   
+  
 
   gameStart = (gameData) => {
     // For browsers that auto suspend new contexts, we resume it on button press
