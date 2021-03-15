@@ -86,7 +86,6 @@
 }
 
 .BattleStage .heros img {
-  transform: scaleX(-1);
   margin-bottom: -15px;
 }
 
